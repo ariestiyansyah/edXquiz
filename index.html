@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>edXQuiz - Darth edXius</title>
+</head>
+<body>
+  <div ng-app ng-controller="studioquiz">
+      <div class="title">Quiz</div>
+      <hr />
+      Question <br><textarea ng-model="quiz.question" rows="10" cols="70"></textarea>
+      <br /><br />
+      A: <input type="checkbox" ng-model="quiz.answera" ng-true-value="(x)" ng-false-value="()"></input><input type="text" ng-model="quiz.a"></input>
+      <br /><br />
+      B: <input type="checkbox" ng-model="quiz.answerb" ng-true-value="(x)" ng-false-value="()"></input><input type="text" ng-model="quiz.b"></input>
+      <br /><br />
+      C: <input type="checkbox" ng-model="quiz.answerc" ng-true-value="(x)" ng-false-value="()"></input><input type="text" ng-model="quiz.c"></input>
+      <br /><br />
+      D: <input type="checkbox" ng-model="quiz.answerd" ng-true-value="(x)" ng-false-value="()"></input><input type="text" ng-model="quiz.d"></input>
+      <br /><br />
+      <div class="title">Text for Studio</div>
+     <hr />
+     <div>>>>{{ quiz.question }}<<<</div>
+     <div>{{ quiz.answera }} {{ quiz.a }}</div>
+     <div>{{ quiz.answerb }} {{ quiz.b }}</div>
+     <div>{{ quiz.answerc }} {{ quiz.c }}</div>
+     <div>{{ quiz.answerd }} {{ quiz.d }}</div>
+     <br /> <br /> <br />
+</div>
+</body>
+  <script src="js/main.js"></script>
+  <script src="js/angular.min.js"></script>
+</html>
